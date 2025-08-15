@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import music from "/mixkit-classic-alarm-995.wav";
+import Spotlium from "./spot"
 
 const CountdownTimer = () => {
   const [hours, setHours] = useState(0);
@@ -133,10 +134,10 @@ const beep = new Audio(music);
 function App() {
   return (
     <>
-      
-      <div className="flex justify-center items-center min-h-screen bg-gray-200 dark:bg-gray-800">
+      {/* <div className="flex justify-center items-center min-h-screen bg-gray-200 dark:bg-gray-800">
         <CountdownTimer />
-      </div>
+      </div> */}
+      <Spotlium/>
     </>
   );
 }
